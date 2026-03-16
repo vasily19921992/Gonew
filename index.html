@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Mastery - Киберпрофессия будущего</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Главный контейнер с параллакс-эффектом -->
+    <div class="parallax-container">
+        <div class="parallax-layer layer-1" data-speed="0.1"></div>
+        <div class="parallax-layer layer-2" data-speed="0.3"></div>
+        <div class="parallax-layer layer-3" data-speed="0.5"></div>
+        <div class="parallax-layer layer-4" data-speed="0.7"></div>
+        <div class="parallax-layer layer-5" data-speed="0.9"></div>
+    </div>
+
+    <!-- Бургер-меню для мобильных устройств -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-code"></i>
+                <span>Go</span>Mastery
+            </a>
+            
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link neon-link">О Go</a></li>
+                <li class="nav-item"><a href="#advantages" class="nav-link neon-link">Преимущества</a></li>
+                <li class="nav-item"><a href="#course" class="nav-link neon-link">Курс</a></li>
+                <li class="nav-item"><a href="#reviews" class="nav-link neon-link">Отзывы</a></li>
+                <li class="nav-item social-links">
+                    <a href="#" class="social-icon" target="_blank" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="./maintenance.html" class="social-icon" target="_blank" title="Дзен">
+                        <i class="fab fa-yandex"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Основное содержимое -->
+    <main class="main-content">
+        <!-- Главный оффер -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="neon-text">GOLANG</span>
+                        <span class="subtitle">Киберпрофессия будущего</span>
+                    </h1>
+                    <p class="hero-description">
+                        Язык программирования для создания высокопроизводительных приложений нового поколения.
+                        Разработан Google для решения задач эпохи многопоточности и облачных вычислений.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="https://t.me/Golangtmskbot" class="btn btn-primary neon-btn">
+                            <i class="fas fa-rocket"></i> Стать Go-разработчиком
+                        </a>
+                        <a href="./article.html" class="btn btn-secondary">
+                            <i class="fas fa-info-circle"></i> Узнать больше
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <div class="code-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="code-title">main.go</span>
+                        </div>
+                        <pre><code>package main
+
+import "fmt"
+
+func main() {
+    fmt.Println("Привет, мир!")
+    
+    // Go - это простота и мощь
+    // Создавайте масштабируемые системы
+    // Работайте с конкурентностью легко
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О языке Go -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="neon-accent">Что такое</span> Go?
+                </h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p><strong>Go (или Golang)</strong> — это статически типизированный компилируемый язык программирования, разработанный в Google.</p>
+                        <p>Он сочетает в себе производительность C++, простоту Python и безопасность Rust, делая его идеальным выбором для:</p>
+                        
+                        <ul class="feature-list">
+                            <li><i class="fas fa-server neon-icon"></i> <strong>Масштабируемых веб-сервисов</strong></li>
+                            <li><i class="fas fa-cloud neon-icon"></i> <strong>Облачных и распределенных систем</strong></li>
+                            <li><i class="fas fa-microchip neon-icon"></i> <strong>Микросервисных архитектур</strong></li>
+                            <li><i class="fas fa-database neon-icon"></i> <strong>Высоконагруженных баз данных</strong></li>
+                            <li><i class="fas fa-robot neon-icon"></i> <strong>DevOps и инструментов автоматизации</strong></li>
+                        </ul>
+                        
+                        <p class="highlight-text">Go используют такие технологические гиганты как Google, Uber, Twitch, Dropbox, Cloudflare и многие другие.</p>
+                    </div>
+                    
+                    <div class="about-image">
+                        <div class="tech-card">
+                            <div class="tech-card-header">
+                                <h3>Технологии на Go</h3>
+                            </div>
+                            <div class="tech-card-content">
+                                <div class="tech-item">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-docker"></i>
+                                    </div>
+                                    <div class="tech-info">
+                                        <h4>Docker</h4>
+                                        <p>Контейнеризация приложений</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="tech-item">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-kubernetes"></i>
+                                    </div>
+                                    <div class="tech-info">
+                                        <h4>Kubernetes</h4>
+                                        <p>Оркестрация контейнеров</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="tech-item">
+                                    <div class="tech-icon">
+                                        <i class="fab fa-ethereum"></i>
+                                    </div>
+                                    <div class="tech-info">
+                                        <h4>Ethereum</h4>
+                                        <p>Блокчейн-платформа</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Преимущества Go -->
+        <section class="advantages-section" id="advantages">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="neon-accent">Почему стоит изучать</span> Go?
+                </h2>
+                
+                <div class="advantages-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Высокая производительность</h3>
+                        <p>Скорость выполнения как у C++, простота как у Python. Идеально для высоконагруженных систем.</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Встроенная конкурентность</h3>
+                        <p>Горутины и каналы делают параллельное программирование простым и безопасным.</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Надежность и безопасность</h3>
+                        <p>Статическая типизация и сборка мусора предотвращают множество ошибок времени выполнения.</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>Облачная нативность</h3>
+                        <p>Создан для облачных вычислений. Идеален для микросервисов и контейнерных приложений.</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Быстрая компиляция</h3>
+                        <p>Мгновенная компиляция даже для крупных проектов. Увеличивает скорость разработки.</p>
+                    </div>
+                    
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3>Высокие зарплаты</h3>
+                        <p>Go-разработчики входят в топ-5 самых высокооплачиваемых IT-специалистов.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Информация о курсе -->
+        <section class="course-section" id="course">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="neon-accent">Курс</span> Go Mastery
+                </h2>
+                
+                <div class="course-content">
+                    <div class="course-info">
+                        <div class="course-highlight">
+                            <h3>Стань востребованным Go-разработчиком за 3 месяца</h3>
+                            <p>Полный курс от основ до продвинутых тем с практическими заданиями и проектами.</p>
+                        </div>
+                        
+                        <ul class="course-features">
+                            <li><i class="fas fa-check-circle"></i> 40+ часов практических видеоуроков</li>
+                            <li><i class="fas fa-check-circle"></i> 15 реальных проектов для портфолио</li>
+                            <li><i class="fas fa-check-circle"></i> Поддержка менторов и комьюнити</li>
+                            <li><i class="fas fa-check-circle"></i> Подготовка к собеседованиям</li>
+                            <li><i class="fas fa-check-circle"></i> Сертификат о завершении курса</li>
+                            <li><i class="fas fa-check-circle"></i> Помощь в трудоустройстве</li>
+                        </ul>
+                        
+                        <div class="price-container">
+                            <div class="price-old">39 990 ₽</div>
+                            <div class="price-new">19 990 ₽</div>
+                            <div class="price-discount">-50% до конца недели</div>
+                        </div>
+                        
+                        <a href="https://t.me/Golangtmskbot" class="btn btn-primary btn-large neon-btn purchase-btn">
+                            <i class="fas fa-shopping-cart"></i> Приобрести курс
+                        </a>
+                    </div>
+                    
+                    <div class="course-curriculum">
+                        <div class="curriculum-card">
+                            <h3>Программа курса</h3>
+                            <div class="module">
+                                <h4>Модуль 1: Основы Go</h4>
+                                <p>Синтаксис, типы данных, функции, структуры</p>
+                            </div>
+                            <div class="module">
+                                <h4>Модуль 2: Конкурентность</h4>
+                                <p>Горутины, каналы, sync package</p>
+                            </div>
+                            <div class="module">
+                                <h4>Модуль 3: Веб-разработка</h4>
+                                <p>HTTP, REST API, базы данных</p>
+                            </div>
+                            <div class="module">
+                                <h4>Модуль 4: Продвинутые темы</h4>
+                                <p>Микросервисы, тестирование, оптимизация</p>
+                            </div>
+                            <div class="module">
+                                <h4>Модуль 5: Карьера</h4>
+                                <p>Портфолио, собеседования, трудоустройство</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="reviews-section" id="reviews">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="neon-accent">Отзывы</span> выпускников
+                </h2>
+                
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="review-author">
+                                <h4>Алексей К.</h4>
+                                <p>Backend-разработчик в Яндекс</p>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>"После курса получил предложение от Яндекса. Go стал моим основным языком. Особенно полезны были занятия по конкурентности."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="review-author">
+                                <h4>Мария С.</h4>
+                                <p>DevOps Engineer в VK</p>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>"Курс дал глубокое понимание языка. Теперь пишу инструменты для автоматизации на Go. Преподаватели - практикующие разработчики."</p>
+                        </div>
+                    </div>
+                    
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="review-avatar">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <div class="review-author">
+                                <h4>Дмитрий П.</h4>
+                                <p>Team Lead в Tinkoff</p>
+                            </div>
+                        </div>
+                        <div class="review-text">
+                            <p>"Прошел курс для перехода с Java на Go. Материал структурирован от простого к сложному. Помогло в карьерном ростре."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма покупки -->
+        <section class="purchase-section" id="purchase">
+            <div class="container">
+                <div class="purchase-card">
+                    <h2 class="section-title">
+                        <span class="neon-accent">Начни свой путь</span> в Go-разработке
+                    </h2>
+                    
+                    <div class="purchase-content">
+                        <div class="purchase-info">
+                            <div class="purchase-highlight">
+                                <h3>Go Mastery Pro</h3>
+                                <p>Полный курс + год поддержки + доступ к закрытому комьюнити</p>
+                            </div>
+                            
+                            <div class="price-container purchase-price">
+                                <div class="price-old">39 990 ₽</div>
+                                <div class="price-new">19 990 ₽</div>
+                                <div class="price-discount">экономия 20 000 ₽</div>
+                            </div>
+                            
+                            <ul class="purchase-features">
+                                <li><i class="fas fa-star"></i> Доступ ко всем материалам навсегда</li>
+                                <li><i class="fas fa-star"></i> Личный ментор на 3 месяца</li>
+                                <li><i class="fas fa-star"></i> Разбор резюме и подготовка к собеседованиям</li>
+                                <li><i class="fas fa-star"></i> Сертификат с проверкой навыков</li>
+                                <li><i class="fas fa-star"></i> Доступ к вакансиям от партнеров</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="purchase-form">
+                            <h3>Оформить заказ</h3>
+                            <!-- Прямая ссылка на Telegram‑бот, форма больше не используется -->
+                            <div class="form-group">
+                                <a href="https://t.me/Golangtmskbot" class="btn btn-primary btn-large neon-btn">
+                                    <i class="fas fa-lock"></i> Купить сейчас
+                                </a>
+                            </div>
+                            <p class="form-note">После оплаты вы получите доступ к курсу в течение 5 минут</p>
+                        </div>
+                        
+                        <div class="payment-methods">
+                            <p>Доступные способы оплаты:</p>
+                            <div class="payment-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-paypal"></i>
+                                    <i class="fab fa-cc-amazon-pay"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="#" class="logo footer-logo">
+                        <i class="fas fa-code"></i>
+                        <span>Go</span>Mastery
+                    </a>
+                    <p>Курс для будущих Go-разработчиков. <br>Освой язык программирования будущего.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:info@gomastery.ru">info@gomastery.ru</a></li>
+                        <li><a href="tel:+78001234567">8 (800) 123-45-67</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Социальные сети</h4>
+                    <div class="social-links footer-social">
+                        <a href="#" class="social-icon" target="_blank" title="Telegram">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </a>
+                        <a href="./maintenance.html" class="social-icon" target="_blank" title="Дзен">
+                            <i class="fab fa-yandex"></i> Дзен
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Быстрые ссылки</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">О языке Go</a></li>
+                        <li><a href="#advantages">Преимущества</a></li>
+                        <li><a href="#course">Программа курса</a></li>
+                        <li><a href="#purchase">Купить курс</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Go Mastery. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

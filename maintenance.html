@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Технические работы | Go Mastery</title>
+    <link rel="stylesheet" href="./maintenance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="background-animation">
+        <div class="particles-container" id="particles"></div>
+        <div class="grid-overlay"></div>
+    </div>
+
+    <!-- Главный контент -->
+    <main class="maintenance-container">
+        <!-- Анимированный логотип -->
+        <div class="logo-container">
+            <div class="logo-animation">
+                <div class="logo-circle">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-go">Go</span>
+                    <span class="logo-mastery">Mastery</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Основное сообщение -->
+        <div class="maintenance-content">
+            <div class="status-indicator">
+                <div class="status-dot"></div>
+                <span class="status-text">РЕЖИМ ОБСЛУЖИВАНИЯ</span>
+            </div>
+
+            <h1 class="maintenance-title">
+                <span class="text-part-1">Ведутся</span>
+                <span class="text-part-2">технические</span>
+                <span class="text-part-3">работы</span>
+            </h1>
+
+            <div class="maintenance-message">
+                <p>Мы улучшаем наш сервис, чтобы предложить вам еще лучший опыт обучения.</p>
+                <p>Сайт временно недоступен, но мы вернемся в ближайшее время.</p>
+            </div>
+
+            <!-- Анимированный прогресс-бар -->
+            <div class="progress-container">
+                <div class="progress-label">
+                    <span>Прогресс работ:</span>
+                    <span class="progress-percent" id="progress-percent">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                    <div class="progress-glow"></div>
+                </div>
+            </div>
+
+            <!-- Таймер -->
+            <div class="timer-container">
+                <div class="timer-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="timer-content">
+                    <h3>Ожидаемое время восстановления</h3>
+                    <div class="timer-display" id="timer">
+                        <div class="timer-unit">
+                            <span class="timer-value">02</span>
+                            <span class="timer-label">часа</span>
+                        </div>
+                        <div class="timer-separator">:</div>
+                        <div class="timer-unit">
+                            <span class="timer-value">30</span>
+                            <span class="timer-label">минут</span>
+                        </div>
+                        <div class="timer-separator">:</div>
+                        <div class="timer-unit">
+                            <span class="timer-value">45</span>
+                            <span class="timer-label">секунд</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Контактная информация -->
+            <div class="contact-container">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-life-ring"></i>
+                    </div>
+                    <div class="contact-info">
+                        <h3>Нужна помощь?</h3>
+                        <p>Если у вас срочный вопрос, свяжитесь с нашей поддержкой:</p>
+                        <div class="contact-links">
+                            <a href="mailto:support@gomastery.ru" class="contact-link">
+                                <i class="fas fa-envelope"></i>
+                                <span>support@gomastery.ru</span>
+                            </a>
+                            <a href="#" class="contact-link" target="_blank">
+                                <i class="fab fa-telegram"></i>
+                                <span>Telegram канал</span>
+                            </a>
+                            <a href="./maintenance.html" class="contact-link" target="_blank">
+                                <i class="fab fa-yandex"></i>
+                                <span>Дзен канал</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Кнопка возврата -->
+            <div class="action-container">
+                <a href="index.html" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Вернуться на главную</span>
+                </a>
+                <button class="refresh-button" id="refresh-button">
+                    <i class="fas fa-redo"></i>
+                    <span>Обновить страницу</span>
+                </button>
+            </div>
+
+            <!-- Дополнительная информация -->
+            <div class="info-container">
+                <div class="info-card">
+                    <h3><i class="fas fa-info-circle"></i> Что происходит?</h3>
+                    <p>В настоящее время мы проводим плановые технические работы для улучшения производительности и добавления новых функций. Мы ценим ваше терпение!</p>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-bolt"></i> Что нового будет?</h3>
+                    <p>После завершения работ вы получите доступ к обновленному интерфейсу, новым урокам и улучшенной системе проверки заданий.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Анимированные элементы -->
+        <div class="floating-elements">
+            <div class="floating-element el1"><i class="fas fa-server"></i></div>
+            <div class="floating-element el2"><i class="fas fa-database"></i></div>
+            <div class="floating-element el3"><i class="fas fa-code"></i></div>
+            <div class="floating-element el4"><i class="fas fa-microchip"></i></div>
+            <div class="floating-element el5"><i class="fas fa-cloud"></i></div>
+        </div>
+    </main>
+
+    <!-- Футер -->
+    <footer class="maintenance-footer">
+        <div class="container">
+            <p>&copy; 2023 Go Mastery. Все права защищены. Сайт находится на техническом обслуживании.</p>
+            <div class="footer-social">
+                <span>Следите за обновлениями:</span>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" target="_blank" title="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a href="./maintenance.html" class="social-icon" target="_blank" title="Дзен">
+                        <i class="fab fa-yandex"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./maintenance.js"></script>
+</body>
+</html>
